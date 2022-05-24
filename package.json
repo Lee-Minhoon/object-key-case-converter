@@ -1,0 +1,24 @@
+{
+  "name": "object-key-case-converter",
+  "version": "0.0.1",
+  "description": "object-key-case-converter",
+  "module": "./lib/esm/index.js",
+  "main": "./lib/cjs/index.js",
+  "author": "hackid <hackids@naver.com>",
+  "license": "MIT",
+  "private": false,
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf lib",
+    "copy-files": "copyfiles README.md lib",
+    "tsc-build": "npm run clean && tsc -p tsconfig-esm.json && tsc -p tsconfig-cjs.json && npm run copy-files",
+    "publish:npm": "npm run tsc-build && npm publish"
+  },
+  "dependencies": {
+    "@types/lodash-es": "^4.17.6",
+    "lodash-es": "^4.17.21"
+  }
+}
