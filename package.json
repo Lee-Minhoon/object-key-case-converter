@@ -4,6 +4,7 @@
   "description": "object-key-case-converter",
   "module": "./lib/esm/index.js",
   "main": "./lib/cjs/index.js",
+  "repository": "https://github.com/Lee-Minhoon/object-key-case-converter",
   "author": "hackid <hackids@naver.com>",
   "license": "MIT",
   "private": false,
