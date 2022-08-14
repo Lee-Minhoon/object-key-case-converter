@@ -1,3 +1,2 @@
-export declare const pascalCase: (string: string) => string;
-export declare const constantCase: (string: string) => string;
-export declare const caseConvert: any;
+declare const caseConvert: any;
+export default caseConvert;
